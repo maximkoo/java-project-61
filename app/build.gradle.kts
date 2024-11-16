@@ -1,8 +1,8 @@
 plugins {
     id("java")
     application
+    checkstyle
 }
-
 
 group = "hexlet.code"
 version = "1.0-SNAPSHOT"
@@ -22,4 +22,8 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+tasks.getByName("run", JavaExec::class) {
+    standardInput = System.`in`
 }
