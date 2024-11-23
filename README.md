@@ -6,8 +6,7 @@
 [![asciicast](https://asciinema.org/a/Dw6U4YFrqWu4BmZdV1Rr2YjwY.svg)](https://asciinema.org/a/Dw6U4YFrqWu4BmZdV1Rr2YjwY)
 <br>
 Калькулятор
-[![asciicast](https://asciinema.org/a/GNaFAgquEHNn4llMVIfozfKpi.svg)](https://asciinema.org/a/GNaFAgquEHNn4l
-<br>lMVIfozfKpi)
+[![asciicast](https://asciinema.org/a/GNaFAgquEHNn4llMVIfozfKpi.svg)](https://asciinema.org/a/GNaFAgquEHNn4llMVIfozfKpi)
 <br>
 НОД
 [![asciicast](https://asciinema.org/a/sNjhkwAJNXKYbvg0QkULBpKNc.svg)](https://asciinema.org/a/sNjhkwAJNXKYbvg0QkULBpKNc)
