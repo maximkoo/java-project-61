@@ -13,7 +13,8 @@ public class Engine {
             correctAnswer = switch (gameType) {
                 case "even" -> even(username);
                 case "calc" -> calc(username);
-                case "GCD" -> Gcd(username);
+                case "GCD" -> gcd(username);
+                case "prog" -> progression(username);
                 default -> "";
             };
             System.out.print("Your answer: ");
@@ -73,17 +74,39 @@ public class Engine {
         return correctAnswer;
     }
 
-    public static String Gcd(String username) {
-        String correctAnswer="1";
+    public static String gcd(String username) {
+        String correctAnswer = "1";
         System.out.println("Find the greatest common divisor of given numbers.");
         int n1 = 1 + (int) (10 * Math.random());
         int n2 = 1 + (int) (10 * Math.random());
         System.out.printf("Question: %d %d%n", n1, n2);
         for (int i = 1; i <= Math.min(n1, n2); i++) {
             if (n1 % i == 0 && n2 % i == 0) {
-                correctAnswer=Integer.valueOf(i).toString();
+                correctAnswer = Integer.valueOf(i).toString();
             }
         }
+        return correctAnswer;
+    }
+
+    public static String progression(String username) {
+        String correctAnswer="";
+        System.out.println("What number is missing in the progression?");
+        int init = 1 + (int) (10 * Math.random());
+        int step = 1 + (int) (6 * Math.random());
+        int num = 5 + (int) (6 * Math.random());
+        int secret = (int) (num * Math.random());
+        String str="";
+
+        for (int i = 0; i < num; i++) {
+            if (i != secret) {
+                str = str + init + " ";
+            } else {
+                str = str + ".. ";
+                correctAnswer=Integer.valueOf(init).toString();
+            }
+            init = init + step;
+        }
+        System.out.printf("Question: %s%n", str);
         return correctAnswer;
     }
 }
