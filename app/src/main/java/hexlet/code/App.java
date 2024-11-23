@@ -11,6 +11,7 @@ public class App {
         System.out.println("3 - Calc");
         System.out.println("4 - GCD");
         System.out.println("5 - Progression");
+        System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         Scanner sc = new Scanner(System.in);
         String choice = sc.next();
@@ -27,6 +28,8 @@ public class App {
             Engine.flow("GCD");
         } else if (choice.equals("5")) {
             Engine.flow("prog");
+        } else if (choice.equals("6")) {
+            Engine.flow("prime");
         } else if (choice.equals("0")) {
             return;
         }
